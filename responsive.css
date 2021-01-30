@@ -1,0 +1,246 @@
+@media (min-width: 1024px){
+
+
+.site-header-top {
+    font-size: 1em;
+}
+.site-cta {
+    font-size: 1em;
+}
+.btn {
+    padding: .85em 1.3em;
+}
+.page-navigation {
+    height: 7.5em;
+}
+.page-navigation .mobile-ctas {
+    display: none;
+	    margin: 0;
+}
+.page-navigation .links {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    opacity: 1;
+    padding: 0 8%;
+    position: relative;
+    top: 0;
+    visibility: visible;
+    width: 100%;
+}
+
+.page-navigation .links::before {
+    background: linear-gradient(90deg, transparent 0%, #23356d 8%, #23356d 92%, transparent 100%);
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 2.05em;
+    width: 100%;
+}
+.page-navigation .links a {
+    display: block;
+    margin: 0;
+    min-height: 0;
+    padding: 0;
+    text-align: center;
+}
+.page-navigation .links a .link-icon {
+    top: 1.6em;
+}
+.page-navigation .links a .link-text {
+    display: none;
+    left: 50%;
+    padding: 0;
+    position: absolute;
+    top: 4.2em;
+    transform: translateX(-50%);
+    width: 9.4em;
+}
+div[data-component=footer] .footer-align {
+    flex-direction: row;
+    padding: 0;
+}
+div[data-component=footer] .trapezoid-bg {
+    border-bottom: 120px solid #23356d;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    position: absolute;
+    width: 100%;
+}
+#section9 .columns .col-one {
+    width: 50%;
+}
+}
+
+
+
+@media (max-width: 1023px){
+.page-navigation.open .links {
+    background-color: #fff;
+    height: auto;
+    left: -2%;
+    opacity: 1;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    transition: all .2s ease-in-out;
+    visibility: visible;
+    width: calc(100% + 2% * 2);
+}
+.page-navigation.open .links a:before {
+    background: linear-gradient(180deg, transparent 0%, #23356d 25%, #23356d 75%, transparent 100%);
+    content: "";
+    display: block;
+    height: 6em;
+    left: 2.05em;
+    position: absolute;
+    top: -1.5em;
+    width: 2px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reference url https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1024px)
+	and (-webkit-min-device-pixel-ratio: 1) {
+	.container {
+		width: 96%;
+	}
+}
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 834px)
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.container {
+		width: 96%;
+	}
+	.site-logo img{
+    width: 76%;
+	}
+		.site-cta .btn{
+	    padding: 0.5em 1.3em;
+		    font-size: 13px;
+	}
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.container {
+		width: 96%;
+	}
+	.site-logo img{
+    width: 76%;
+	}
+		.site-cta .btn{
+	    padding: 0.5em 1.3em;
+		    font-size: 13px;
+	}
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.container {
+		width: 96%;
+	}
+	.site-logo img{
+    width: 76%;
+	}
+		.site-cta .btn{
+	    padding: 0.6em 1.3em;
+		font-size: 14px;
+	}
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+	.container {
+		width: 96%;
+	}
+	.site-logo img{
+    width: 76%;
+	}
+	.site-cta .btn{
+	    padding: 0.6em 1.3em;
+		font-size: 14px;
+	}
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+	.container {
+		width: 96%;
+	}
+	.site-logo img{
+    width: 76%;
+	}
+	.site-cta .btn{
+	    padding: 0.6em 1.3em;
+		font-size: 14px;
+	}
+}

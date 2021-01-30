@@ -1,0 +1,1184 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400&display=swap);
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+body{
+    background-image:url('images/BACKGROUND.png');
+    background-color: #fff;
+    color: #000;
+    font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0;
+}
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.site-header {
+    position: relative;
+    position: -webkit-sticky;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 110;
+    background-color: #FFF;
+}
+@media screen and (max-width: 500px) {
+  .site-header {
+    width:100%;
+
+  }
+}
+.site-header-top {
+    font-size: .4em;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.site-header-top .container {
+    display: flex;
+    /*height: 7.5em;*/
+    justify-content: space-between;
+    padding-bottom: 1.25em;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+    width: 91%;
+}
+.site-logo {
+    display: flex;
+    /*margin: 0 1em;
+    padding: 0 1em;*/
+    position: relative;
+}
+
+
+.site-logo img{
+    width: 38%;
+}
+.site-cta {
+    align-items: center;
+    display: flex;
+    font-size: .75em;
+}
+
+
+.site-cta .btn {
+    background: transparent;
+    border-radius: 2px;
+    border-width: 0;
+    display: inline-block;
+    font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2em;
+    padding: 0.9em 1.3em;
+    pointer-events: auto;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+.site-cta .btn--primary {
+    background-color: #ff9933;
+    color: #fff;
+}
+.site-cta a.btn {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #EB7C33;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 5%;
+}
+
+.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#firstsec{
+  margin-top: 10%;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 480px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.firstsectext{
+  margin-left: 12%;
+  margin-top: 7%;
+}
+@media only screen and (max-width: 550px) {
+  .firstsectext{
+    width: 90%;
+    height: 90%;
+    margin-left: 4%;
+   }
+}
+.pic{
+	width:500px;
+	height: 425px;
+	margin-left:17%;
+  margin-top: 2.5%
+
+}
+@media only screen and (max-width: 550px) {
+  .pic {
+    width: 98%;
+    margin-left: 4%;
+   }
+}
+.hexagon{
+	margin-top: -13%;
+	margin-left:2%;
+	position: absolute;
+
+}
+@media only screen and (max-width: 500px) {
+  .hexagon {
+    display: none;
+
+  }
+}
+
+.transhexagon{
+	margin-top: -10%;
+	margin-left:7%;
+	position: absolute;
+
+}
+@media only screen and (max-width: 500px) {
+  .transhexagon {
+    display: none;
+
+  }
+}
+.Yellow{
+	width: 250px;
+	height: 200px;
+    margin-right: 100%;
+    margin-top: -10%;
+    margin-left: -4%;
+
+}
+#thirdsec{
+  margin-top: 5%;
+}
+.Research{
+	margin-left: 25%;
+}
+@media screen and (max-width: 600px) {
+  .Research {
+    width: 85%;
+    margin-left: 5%;
+  }
+}
+.graph{
+	margin-top: -3%;
+	margin-left: 25%;
+}
+@media screen and (max-width: 1000px) {
+  .graph {
+    width: 100%;
+    margin-left: 4%;
+    margin-top: -30%;
+  }
+}
+.seefig{
+	color: #CC6633;
+	font-family: SourceSansPro-SemiBold,AdobeInvisFont,MyriadPro-Regular;
+	font-size: 16;
+	text-align: center;
+	opacity: 1;
+}
+.children{
+	margin-top: -7%;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .children {
+    width: 100%;
+    margin-left: 4%;
+    margin-top: 1%;
+  }
+}
+.sentence{
+	text-align: center;
+	font-size: 30px;
+	color: #CC6600;
+}
+@media screen and (max-width: 1000px) {
+  .sentence {
+    width: 100%;
+    text-align: center;
+	font-size: 20px;
+	color: #CC6600;
+
+  }
+}
+.index{
+	margin-left: 230px;
+	width: 101px;
+	height: 16px;
+	color: #000000;
+	margin-top: 2px;
+
+}
+@media screen and (max-width: 1000px) {
+  .index {
+    width: 100%;
+    margin-left:-50px;
+	margin-top: 350px;
+	height: 16px;
+	color: #000000;
+
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cogintive{
+	width: 271px;
+	height: 20px;
+	margin-left: 284px;
+	margin-top: 1px;
+	color: #000000;
+
+}
+@media screen and (max-width: 1000px) {
+  .cogintive {
+    width: 100%;
+    height: 20px;
+	margin-left: 125px;
+	margin-top: 1px;
+	color: #000000;
+
+  }
+}
+
+
+.indeximage{
+	margin-left: 100px;
+	width: 470px;
+	height: 256px;
+	margin-top: 4%;
+	position: relative;
+
+}
+@media screen and (max-width: 1000px) {
+  .indeximage {
+    width: 200%;
+    height: 256px;
+	margin-top: 4%;
+	position: relative;
+	margin-left: -200px;
+
+
+  }
+}
+
+.cogintiveimage{
+	margin-left: 175px;
+	width: 477px;
+	height:256px;
+	margin-top: 2%;
+	position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .cogintiveimage {
+    width: 200%;
+    height:256px;
+	margin-top: -3%;
+	position: relative;
+	margin-left: 25px;
+
+
+  }
+}
+.line1{
+	width: 40%;
+	margin-right: 26%;
+}
+@media screen and (max-width: 1000px) {
+  .line1 {
+    width: 100%;
+	margin-right: -59%;
+	margin-top: -5%;
+
+  }
+}
+.line2{
+	width: 25%;
+	margin-right: 51%;
+  margin-top: 1%;
+}
+@media screen and (max-width: 1000px) {
+  .line2{
+    width: 50%;
+	margin-left: -29%;
+	margin-top: -3%;
+
+  }
+}
+.seefig2{
+	color: #CC6633;
+	font-family: SourceSansPro-SemiBold,AdobeInvisFont,MyriadPro-Regular;
+	font-size: 16;
+	text-align: center;
+	margin-top: -14%;
+	opacity: 1;
+  margin-left: 22%;
+  position: absolute;
+}
+.sentance2{
+	text-align: center;
+	font-size: 30px;
+	color: #CC6600;
+  margin-top: 5%;
+  position: absolute;
+  margin-left: 18%;
+}
+.sixthsec{
+  background-color: #F6F6F6;
+  height: 600px;
+  margin-top: -9%;
+}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.verticalline{
+  position: absolute;
+  margin-left: 48%;
+  margin-top: -11%;
+  height: 40%;
+}
+.sixthsectext{
+  margin-left:27%;
+  color: gray;
+  font-weight:bold;
+  font-size: 130%;
+  margin-top: 20%;
+  text-align: right;
+  margin-right: 5%;
+}
+.graphimage{
+  margin-top: 15%;
+}
+.fig3{
+	text-align: center;
+	color:#CC6633;
+  margin-top: 2%;
+  margin-left: -25%;
+  font-weight: bold;
+}
+.bluehexa{
+	width: 282px;
+	height: 282px;
+	margin-left: -90px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 560px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.clincaloutcome{
+  margin-top: 13%;
+  margin-left: 10%;
+}
+.icons{
+  width: 134;
+  height: 350;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+h4{
+  width: 45%;
+  height: 120%;
+  margin-top: -39%;
+  margin-left: 30%;
+  font-size: 115%;
+  font-weight: lighter;
+}
+.productimg{
+  margin-top: 10%;
+  height: 70%;
+  margin-left: 20%;
+}
+.buttons{
+  margin-top: 5%;
+}
+.butt {
+   border: 1px outset orange;
+   background-color: #FF6633;
+   height:55px;
+   width:206px;
+   cursor:pointer;
+   margin-left: 32%;
+   margin-top: 0%;
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+
+}
+@media screen and (max-width: 600px) {
+  .butt {
+    width: 50%;
+    margin-left: 26%;
+  }
+}
+
+.butt:hover {
+   background-color: orange;
+   color:white;
+}
+.butt2 {
+   border: 1px outset orange;
+   background-color: #E88D3B;
+   height:55px;
+   width:206px;
+   cursor:pointer;
+   margin-left: 7%;
+   margin-top: 0%;
+   color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .butt2 {
+    width: 50%;
+    margin-left: 26%;
+    margin-top: 2%;
+  }
+}
+.butt2:hover {
+   background-color: orange;
+   color:white;
+}
+.line{
+  margin-left: 7%;
+  width: 85%;
+  margin-top: 0%;
+}
+@media screen and (max-width: 600px) {
+  .line {
+    width: 0%;
+    margin-left: 26%;
+  }
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+  width: 100%;
+}
+.researchboy{
+  margin-left: -3%;
+  margin-top: 0%;
+}
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 9%;
+  right: 10%;
+  font-size: 250%;
+  font-weight: bold;
+
+}
+@media screen and (max-width: 600px) {
+  .top-right {
+    font-size: 75%;
+    margin-left: -20%;
+  }
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 30%;
+  right: 8.5%;
+  font-size: 130%;
+  font-weight:100;
+}
+@media screen and (max-width: 600px) {
+  .bottom-right {
+    font-size: 40%;
+    right: 8%;
+    top:45%;
+  }
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 480px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+h1{
+  margin-left: 12%;
+  font-size: 300%;
+  margin-top: 10%;
+  font-weight:bold;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    width: 90%;
+    font-size: 250%;
+  }
+}
+h3{
+  margin-left: 12%;
+  font-size: 120%;
+  font-weight:bolder;
+  margin-top:-1%;
+}
+.gene-3{
+  margin-left: 13.5%;
+  margin-top: 2%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row2 {
+  display: flex;
+}
+
+
+/* Create three equal columns that sits next to each other */
+.column2 {
+  flex: 30%;
+  padding: -20%;
+  margin-left: 3%;
+}
+.blocks{
+  font-size: 100%;
+  padding: 2%;
+    text-align: center;
+    font-weight: lighter;
+}
+.blocks1{
+  margin-left: 2%;
+  font-size: 100%;
+  margin-top: 0.5%;
+    text-align: center;
+    font-weight: lighter;
+}
+.blocks2{
+  margin-left: 0%;
+  font-size: 100%;
+  margin-top: 0.5%;
+  text-align: center;
+  font-weight: lighter;
+}
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 560px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left1 {
+  width: 60%;
+}
+
+.right1 {
+  width: 40%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+/* Create two unequal columns that floats next to each other */
+.column1 {
+  float: left;
+  padding: 10px;
+  height: 620px; /* Should be removed. Only for demonstration */
+}
+.text{
+  font-weight: lighter;
+  margin-top: 25%;
+  margin-left: 30%;
+  color: #CC6600;
+}
+@media screen and (max-width: 600px) {
+  .text {
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 25%;
+  }
+}
+
+.orange{
+  height: 40%;
+  margin-left: 28%;
+  margin-top: 0%;
+}
+@media screen and (max-width: 600px) {
+  .orange {
+    width: 200%;
+    height: 50%;
+
+  }
+}
+.grayline{
+  margin-left: 7%;
+}
+.equazenheading{
+  margin-left: 13%;
+  margin-top: 15%;
+}
+.balance{
+  margin-left: 13%;
+  margin-top: 5%;
+  width: 80%;
+}
+@media screen and (max-width: 600px) {
+  .equazenheading {
+    width: 90%;
+    height: 30%;
+    margin-left: 7%;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .balance {
+    width: 100%;
+    height: 60%;
+    margin-left: 3%;
+
+  }
+}
+.product{
+  margin-top: 30%;
+  margin-left: 25%;
+  width: 42%;
+  height: 94%;
+}
+@media screen and (max-width: 600px) {
+  .product {
+    width: 60%;
+    height: 70%;
+    margin-left: 24%;
+    margin-top: 20%;
+
+  }
+}
+.equazentext{
+  margin-top: 15%;
+  margin-left: -11%;
+  text-align: center;
+  font-weight: bold;
+  color: #666666;
+  font-size: 130%;
+  width: 120%;
+  height: 50%;
+}
+@media screen and (max-width: 600px) {
+  .equazentext {
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    margin-left: 12%;
+    margin-top: 2%;
+  }
+}
+.hex-sm{
+  margin-left: -3%;
+  margin-top: 6%;
+  position: absolute;
+}
+@media screen and (max-width: 600px) {
+  .hex-sm {
+    margin-left: -11%;
+    margin-top: 15%;
+    position: absolute;
+    height: 25%;
+  }
+}
+.omega{
+  margin-left: 35%;
+  margin-top: 8%;
+}
+@media screen and (max-width: 600px) {
+  .omega {
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    margin-left: 12%;
+    margin-top: 6%;
+  }
+}
+.vectorobject{
+  margin-top: 1.5%;
+  margin-left: 22%;
+}
+@media screen and (max-width: 600px) {
+  .vectorobject {
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    margin-left: 12%;
+    margin-top: 6%;
+  }
+}
+
+.omega-text{
+  margin-left: 0%;
+  text-align: center;
+  font-size: 140%;
+  width: 100%;
+  color: #939393;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .omega-text {
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 6%;
+  }
+}
+
+.hex-lg{
+  margin-left: 87%;
+  margin-top: -23%;
+  position: absolute;
+}
+@media screen and (max-width: 600px) {
+  .hex-lg {
+    display: none;
+  }
+}
+.button{
+  border: 0px outset orange;
+  background-color: #01A6DF;
+  height:55px;
+  width:450px;
+  cursor:pointer;
+  margin-left: 35%;
+  margin-top: 0%;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .button {
+    margin-left: 4%;
+    margin-top: 10%;
+    position: absolute;
+    height: 55px;
+  }
+}
+.yhex-sm{
+  margin-left: 90%;
+  margin-top: -9%;
+  position: absolute;
+}
+@media screen and (max-width: 600px) {
+  .yhex-sm {
+    display: none;
+  }
+}
+.evidencebasedheading{
+  color: #666666;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .evidencebasedheading {
+    margin-top: 30%;
+    margin-left: 15%;
+  }
+}
+.product-2{
+  margin-top: 9%;
+  height: 60%;
+  width: 21%;
+  margin-left: -5%;
+  position: absolute;
+}
+@media screen and (max-width: 600px) {
+  .product-2 {
+    margin-top: 80%;
+    position: relative;
+    width: 20%;
+    height: 30%;
+  }
+}
+ul {
+    list-style: none;
+    margin-left: 8%;
+    font-size: 110%;
+    color: #7C7C7C;
+    font-weight: bolder;
+}
+
+li:before {
+    content: " + ";
+    color: #D07243;
+    font-size: 110%;
+}
+.blue-hex{
+  margin-top: 14%;
+  margin-left: 9%;
+}
+@media screen and (max-width: 600px) {
+  .blue-hex {
+    display: none;
+  }
+}
+.yellow-hex{
+  margin-top: 8%;
+  margin-left: -8%;
+  position: absolute;
+}
+@media screen and (max-width: 600px) {
+  .yellow-hex {
+    display: none;
+  }
+}
+.consumerbutton {
+   border: 1px outset orange;
+   background-color: #FF6633;
+   height:55px;
+   width:206px;
+   cursor:pointer;
+   margin-left: 55%;
+   margin-top: 10%;
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+
+}
+@media screen and (max-width: 600px) {
+  .consumerbutton {
+    width: 50%;
+    margin-left: 26%;
+  }
+}
+
+.consumerbutton:hover {
+   background-color: orange;
+   color:white;
+}
+.videobutton {
+   border: 1px outset orange;
+   background-color: #E88D3B;
+   height:55px;
+   width:206px;
+   cursor:pointer;
+   margin-left: 5%;
+   margin-top: 9.8%;
+   color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+
+}
+@media screen and (max-width: 600px) {
+  .videobutton {
+    width: 50%;
+    margin-left: 26%;
+    margin-top: 2%;
+  }
+}
+.videobutton:hover {
+   background-color: orange;
+   color:white;
+}
+#nutritionalinfo{
+  margin-top: 5%;
+  height: 650px;
+}
+@media screen and (max-width: 600px) {
+  #nutritionalinfo {
+    width: 100%;
+
+  }
+}
+.nutritionpic{
+  margin-top: 10%;
+  margin-left: 16%;
+}
+@media screen and (max-width: 600px) {
+  #nutritionalinfo {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 2%;
+
+  }
+}
+.kidspic{
+  margin-left: 10%;
+  width: 90%;
+  margin-top: 12%;
+}
+@media screen and (max-width: 600px) {
+  .kidspic{
+    width: 100%;
+    margin-top: 145%;
+    margin-left: 7%;
+
+  }
+}
+#faqs{
+  background-color: #F6F6F6;
+}
+.collapsible {
+  color: #777
+  cursor: pointer;
+  padding: 32px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+}
+
+.active, .collapsible:hover {
+
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
